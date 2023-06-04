@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 import 'package:project/view/detail_page.dart';
 import 'package:project/view/model.dart';
 
-
 class HomePage extends StatefulWidget {
 
   @override
