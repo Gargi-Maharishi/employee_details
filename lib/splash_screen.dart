@@ -1,8 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:project/view/home_page.dart';
-
-
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -38,26 +35,13 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future navigator() async {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 03), () {
       Navigator.pushReplacement<void, void>(
     context,
     MaterialPageRoute<void>(
       builder: (BuildContext context) =>  HomePage(),
     ),
   );
-
-
-      // bool profile = LocalManager.instance.getBoolValue(PreferencesKeys.profileFlag);
-      // bool mpin = LocalManager.instance.getBoolValue(PreferencesKeys.mpinFlag);
-      // if (profile && mpin) {
-      //   // navigate to mpin
-      //   NavigationService.instance
-      //       .navigateToPageClear(NavigationConstants.mpin_view);
-      // } else {
-      //   // navigate to login page
-      //   NavigationService.instance
-      //       .navigateToPageClear(NavigationConstants.login_view);
-      // }
     });
   }
 }

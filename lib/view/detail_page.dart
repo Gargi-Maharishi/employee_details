@@ -36,7 +36,7 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                 children: [
                   Row
                   (
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                       CircleAvatar(
                         radius: 51,
@@ -75,7 +75,6 @@ class _EmployeeDetailPageState extends State<EmployeeDetailPage> {
                     ],
                   ),
                   Row(
-                    
                     children: [
                       Text("Address:"),
                       Text(widget.employee.address),
